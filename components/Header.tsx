@@ -5,10 +5,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
 const links = [
-  { title: "Product", href: "/" },
-  { title: "About", href: "/about" },
-  { title: "Company", href: "/company" },
-  { title: "Contact", href: "/contact" },
+  { title: "Home", href: "/" },
+  { title: "Services", href: "/Services" },
+  { title: "Contact", href: "/Contact" },
 ];
 
 const transition = { duration: 1, ease: [0.76, 0, 0.24, 1] };
@@ -30,11 +29,11 @@ export default function Header() {
   const [selectedLink, setSelectedLink] = useState({ isActive: false, index: 0 });
 
   return (
-    <div className="md:p-12 sm:p-8 p-4 absolute top-0 right-0">
+    <div className="md:p-12 sm:p-8 p-4 absolute top-0 right-0 z-[40] ">
       <div className="flex">
         <div
           onClick={() => setIsActive(!isActive)}
-          className={`z-[100] flex items-center justify-center h-[35px] w-[35px] cursor-pointer rounded-full transition-colors ease-in-out ${
+          className={`z-[50] flex items-center justify-center h-[35px] w-[35px] cursor-pointer rounded-full transition-colors ease-in-out ${
             isActive ? "duration-1000 bg-gray-200" : "duration-[2000ms] bg-white"
           }`}
         >
@@ -74,15 +73,16 @@ export default function Header() {
                     <Link href="/" className="cursor-pointer">Facebook</Link>
                   </motion.div>
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col gap-4">
                   {links.map((link, index) => (
-                    <div
+                    <Link 
+                      href={link.href}
                       key={index}
-                      className="font-ppNeueMontreal flex flex-col gap-4 self-end sm:text-4xl text-3xl"
+                      className="font-ppNeueMontreal flex flex-col gap-4 self-end sm:text-4xl text-3xl cursor-pointer"
                       onClick={() => setSelectedLink({ isActive: true, index })}
                     >
                       {link.title}
-                    </div>
+                    </Link>
                   ))}
                 </div>
               </div>

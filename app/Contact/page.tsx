@@ -1,14 +1,16 @@
 import React from 'react'
-import Navigation from '@/components/Navigation'
+import NavBar from '@/components/NavBar'
 import Link from 'next/link'
+import Navigation from '@/components/Navigation'
 
 
 function page() {
   return (
     <main className=''>
+    <NavBar/>
     <Navigation/>
-    <div className='md:p-12 sm:p-8 p-4 font-ppNeueMontreal'>
-        <h1 className='md:p-12 sm:p-8 p-4 md:text-5xl sm:text-4xl text-3xl'>
+    <div className='md:px-12 sm:p-8 p-4 font-ppNeueMontreal'>
+        <h1 className='md:px-12 sm:p-8 p-4 md:text-5xl sm:text-4xl text-3xl'>
             Get in Touch
         </h1>
         <p className='md:px-12 sm:px-8 px-4'>
