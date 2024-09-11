@@ -29,9 +29,32 @@ export default function ClipGallery() {
       )
 }
 
+// function Gallery({handle} : {handle: string}) {
+//   return (
+//     <div className="gallery h-[120vh] clip-path-polygon-0-0-0-100-100-100-100-0">
+//       <div className="image-container w-full h-full relative">
+//         <Image
+//           src={`/images/${handle}/background.jpg`}
+//           alt="image"
+//           fill
+//           className="object-cover"
+//         />
+//       </div>
+//       <motion.div className="vignette fixed top-0 right-0 overflow-hidden h-[30vw] w-[25vw]">
+//         <Image
+//           src={`/images/${handle}/1.jpg`}
+//           alt="image"
+//           fill
+//           className="object-cover"
+//         />
+//       </motion.div>
+//     </div>
+//   )
+// }
+
 function Gallery({handle} : {handle: string}) {
   return (
-    <div className="gallery h-[120vh] clip-path-polygon-0-0-0-100-100-100-100-0">
+    <div className="gallery h-[50vh] clip-path-polygon-0-0-0-100-100-100-100-0">
       <div className="image-container w-full h-full relative">
         <Image
           src={`/images/${handle}/background.jpg`}
@@ -41,15 +64,11 @@ function Gallery({handle} : {handle: string}) {
         />
       </div>
       <motion.div className="vignette fixed top-0 right-0 overflow-hidden h-[30vw] w-[25vw]">
-        <Image
-          src={`/images/${handle}/1.jpg`}
-          alt="image"
-          fill
-          className="object-cover"
-        />
+        <h1 className='text-5xl'>{handle}</h1>
       </motion.div>
     </div>
   )
 }
+
 
 
