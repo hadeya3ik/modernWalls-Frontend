@@ -77,8 +77,8 @@ export default function Services() {
                 Our services
         </h1> */}
         <div className='flex'>
-            <div className='flex gap-4 pb-4 flex-col pt-4 flex-1 pr-4'>
-                <h1 className='md:text-5xl sm:text-4xl text-3xl self-start pb-4'>
+            <div className='flex gap-8 pb-8 flex-col pt-4 flex-1 pr-4'>
+                <h1 className='md:text-5xl sm:text-4xl text-3xl self-start pb-8 pt-4'>
                     Our services
                 </h1>
                 <p className='max-w-lg'>

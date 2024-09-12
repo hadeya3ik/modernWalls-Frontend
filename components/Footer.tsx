@@ -34,10 +34,10 @@ const Footer : React.FC = () => {
                 </div>
             </div>
             <div className='flex justify-between items-center'>
-                <h1 className='md:text-5xl sm:text-4xl text-3xl mix-blend-difference'>
+                <h1 className='md:text-5xl sm:text-4xl text-3xl whitespace-nowrap mix-blend-difference'>
                     MODERN WALLS
                 </h1>
-                <p className='font-ppNeueMontreal'>Privacy Policy</p>
+                <p className='font-ppNeueMontreal'>All Rights Reserved</p>
             </div>
         </div>
       </div>
