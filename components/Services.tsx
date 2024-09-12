@@ -48,7 +48,7 @@ export default function Services() {
   const [modal, setModal] = useState<ModalProps>({ active: false, index: 0 });
 
   return (
-    <main className="font-ppNeueMontreal flex flex-col md:p-24 sm:p-16 p-8">
+    <main className="font-ppNeueMontreal flex flex-col md:p-24 sm:p-16 p-8 border-b border-black">
         <Image
             className='-mb-40'
             key={`modal_`}

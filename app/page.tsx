@@ -17,7 +17,6 @@ export default function Home() {
       <Hero/>
       <About/>
       <Services/>
-      <ClipGallery/>
       <Footer/>
     </main>
     </ReactLenis>
