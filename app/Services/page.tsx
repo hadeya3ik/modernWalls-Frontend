@@ -63,20 +63,22 @@ function Gallery({ name, images }: { name: string, images: StaticImageData[] }) 
 
     return (
         <div ref={container} className="gallery clip-path-polygon-0-0-0-100-100-100-100-0">
-            <motion.div className="whitespace-nowrap vignette fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] overflow-hidden">
-                <h1 className="text-5xl font-ppNeueMontreal text-center">{name}</h1>
+            <motion.div className="z-[0] whitespace-nowrap vignette fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] overflow-hidden">
+                <h1 className="text-xl sm:text-3xl md:text-5xl font-ppNeueMontreal text-center text-black mix-blend-difference">
+                    {name}
+                </h1>
             </motion.div>
-            <div className="flex flex-wrap justify-center sm:justify-between ">
-                {images.map((image, index) => (
-                    <motion.div
-                        key={index}
-                        style={{ y: index === 0 ? y1 : index === 1 ? y2 : y3 }}
-                        className="h-[60vh] w-[50vh]"
-                    >
-                        <Image src={image} alt={`image-${index + 1}`} />
-                    </motion.div>
-                ))}
-            </div>
+            <div className="flex flex-wrap justify-center sm:justify-between px-4"> 
+            {images.map((image, index) => (
+                <motion.div
+                    key={index}
+                    style={{ y: index === 0 ? y1 : index === 1 ? y2 : y3 }}
+                    className="w-[95%] h-[60vh] sm:w-[50vh] relative z-[50]" 
+                >
+                    <Image className="z-50" src={image} alt={`image-${index + 1}`} />
+                </motion.div>
+            ))}
+        </div>
         </div>
     );
 }

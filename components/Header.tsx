@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { RollLink } from "./RollLink";
 
 const links = [
   { title: "Home", href: "/" },
@@ -62,32 +63,38 @@ export default function Header() {
               <h1 className="text-3xl z-[100] mix-blend-difference">BRAND</h1>
               <div className="w-full flex items-center justify-between">
                 <div className="flex gap-12 sm:flex-row flex-col sm:text-md text-sm">
-                  <div className="font-ppNeueMontreal">
+                  {/* <div className="font-ppNeueMontreal">
                     <p>1234567-89</p>
                     <p>xxx Address, City</p>
                     <p>Province, Country</p>
-                  </div>
+                  </div> */}
                   <motion.div className="font-ppNeueMontreal flex flex-col">
-                    <Link href="/" className="cursor-pointer">Instagram</Link>
-                    <Link href="/" className="cursor-pointer">Tiktok</Link>
-                    <Link href="/" className="cursor-pointer">Facebook</Link>
+                  <RollLink  href="https://www.instagram.com/modernwalls.pk/" >
+                      {"Instagram"}
+                  </RollLink>
+                  <RollLink href="https://www.tiktok.com/@modernwall.pk" >
+                      {"Tiktok"}
+                  </RollLink>
                   </motion.div>
                 </div>
                 <div className="flex flex-col gap-4">
                   {links.map((link, index) => (
-                    <Link 
+                    <div 
+                    key={index}
+                    className="font-ppNeueMontreal flex flex-col gap-4 self-end sm:text-4xl text-3xl cursor-pointer"
+                    onClick={() => setSelectedLink({ isActive: true, index })}
+                    >
+                    <RollLink 
                       href={link.href}
-                      key={index}
-                      className="font-ppNeueMontreal flex flex-col gap-4 self-end sm:text-4xl text-3xl cursor-pointer"
-                      onClick={() => setSelectedLink({ isActive: true, index })}
                     >
                       {link.title}
-                    </Link>
+                    </RollLink>
+                    </div>
                   ))}
                 </div>
               </div>
               <h1 className="md:text-5xl sm:text-4xl text-3xl mix-blend-difference self-end items-end">
-                companyname@ex.com
+                modernwalls@gmail.com
               </h1>
             </motion.div>
           </motion.div>

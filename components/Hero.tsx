@@ -18,11 +18,10 @@ function Hero() {
             <Navigation/>
             <div ref={container} className="relative h-[300vh]">
                 <div className="sticky top-0 h-screen overflow-hidden">
-                    
                     <div className="relative top-0 left-0 flex flex-col items-center justify-center w-full h-full ">
-                    <div className='md:p-12 sm:p-8 p-4 md:text-5xl sm:text-4xl text-3xl'>
-                        MODERN WALLS
-                    </div>
+                    {/* <div className='md:p-12 sm:p-8 p-4 md:text-5xl sm:text-4xl text-3xl  font-ppNeueMontreal'>
+                        Crafting Spaces, Creating Experiences.
+                    </div> */}
                         <motion.div
                             style={{ width }}
                             className="relative h-[50vh] sm:h-[90vh] overflow-hidden"

@@ -1,39 +1,44 @@
+'use client'
 import React from 'react'
 import NavBar from '@/components/NavBar'
 import Link from 'next/link'
 import Navigation from '@/components/Navigation'
-
+import { RollLink } from '@/components/RollLink'
 
 function page() {
   return (
-    <main className=''>
+    <main className='h-full'>
     <NavBar/>
     <Navigation/>
-    <div className='md:px-12 sm:p-8 p-4 font-ppNeueMontreal'>
-        <h1 className='md:px-12 sm:p-8 p-4 md:text-5xl sm:text-4xl text-3xl'>
+    <div className='flex flex-col justify-between h-full border'>
+
+    
+    <div className='md:p-12 sm:p-8 p-4 font-ppNeueMontreal flex flex-col gap-4'>
+        <h1 className=' md:px-12 sm:px-8 px-4 md:text-5xl sm:text-4xl text-3xl'>
             Get in Touch
         </h1>
         <p className='md:px-12 sm:px-8 px-4'>
             For new project inquiries, you can reach us by filling out the form below.
         </p>
     </div>
-    <div className='flex justify-between gap-40 md:p-24 sm:p-16 p-8'>
+    <div className='flex justify-between gap-40 md:px-24 sm:px-16 px-8'>
     <Form/>
     <div className='flex gap-12 flex-col'>
         <div className='flex flex-col items-end gap-2 justify-end  sm:text-md text-sm font-ppNeueMontreal'>
-            <p>1234567-89</p>
-            <p>xxx Address, City</p>
-            <p>Province, Country</p>
-            <Link href='/' className='cursor-pointer'>Instagram</Link>
-            <Link href='/' className='cursor-pointer'>Tiktok</Link>
-            <Link href='/' className='cursor-pointer'>Facebook</Link>
+          <RollLink  href="https://www.instagram.com/modernwalls.pk/" >
+              {"Instagram"}
+          </RollLink>
+          <RollLink href="https://www.tiktok.com/@modernwall.pk" >
+              {"Tiktok"}
+          </RollLink>
         </div>
         <h1 className='md:text-5xl sm:text-4xl text-3xl mix-blend-difference self-end'>
-            companyname@ex.com
+            moderwalls@gmail.com
         </h1>
         <div className='flex flex-col items-end gap-2 justify-end  sm:text-md text-sm font-ppNeueMontreal'>
-            <p>We welcome your inquiries by phone or e-mail</p>
+            <p>We welcome your inquiries by DM or e-mail</p>
         </div>
+    </div>
     </div>
     </div>
     </main>
