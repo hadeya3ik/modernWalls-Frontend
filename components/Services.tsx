@@ -57,7 +57,6 @@ export default function Services() {
         />
         <motion.div
         initial={{  }}
-        // className="sticky top-12 h-[500px] w-[335px] overflow-hidden self-end border-8">
         className="sticky top-12 h-[500px] w-[335px] overflow-hidden self-end  hidden md:block">
             <div
                 style={{ top: modal.index * -100 + '%' }}
@@ -73,19 +72,16 @@ export default function Services() {
                     ))}
             </div>
         </motion.div>
-        {/* <h1 className='md:text-5xl sm:text-4xl text-3xl self-start pb-8'>
-                Our services
-        </h1> */}
         <div className='flex'>
             <div className='flex gap-8 pb-8 flex-col pt-4 flex-1 pr-4'>
                 <h1 className='md:text-5xl sm:text-4xl text-3xl self-start pb-8 pt-4'>
                     Our services
                 </h1>
                 <p className='max-w-lg'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Non lectus eget non mus facilisis ipsum nunc faucibus. Tempus fusce placerat accumsan nec primis orci egestas facilisis. Enim neque ullamcorper maximus magna non. Sapien leo felis risus; nisi ullamcorper iaculis. Adipiscing fusce tristique magna morbi montes blandit vehicula. Porttitor tortor praesent vehicula commodo platea.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Non lectus eget non mus facilisis ipsum nunc faucibus. Tempus fusce placerat accumsan nec primis orci egestas facilisis. Enim neque ullamcorper maximus magna non. Sapien leo felis risus; nisi ullamcorper iaculis. Adipiscing fusce tristique magna morbi montes blandit vehicula. Porttitor tortor praesent vehicula commodo platea.
                 </p>
                 <p className='sm:max-w-md max-w-lg self-end'>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
             <div className="hidden md:block h-[500px] w-[335px] overflow-hidden"></div>

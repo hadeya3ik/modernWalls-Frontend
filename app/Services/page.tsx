@@ -8,6 +8,7 @@ import Picture1 from '@/images/pexels10.jpg';
 import Picture2 from '@/images/pexels11.jpg';
 import Picture3 from '@/images/pexels13.jpg';
 import Footer from "@/components/Footer";
+
 type Project = {
     name: string;
     images: StaticImageData[]; 
@@ -18,11 +19,22 @@ export default function Page() {
         <main className="">
             <NavBar/>
             <Navigation/>
+            <>
+            <div  className="gallery clip-path-polygon-0-0-0-100-100-100-100-0">
+                <motion.div className="z-[0] whitespace-nowrap vignette fixed top-[25%] left-[50%] translate-x-[-50%] translate-y-[-50%] overflow-hidden">
+                    <h1 className="text-xl sm:text-3xl md:text-5xl font-ppNeueMontreal text-center text-black mix-blend-difference">
+                        What we Build
+                    </h1>
+                </motion.div>
+            <div className="w-[95%] h-[25vh]">
+            </div> 
+            </div>
             {
                 projects.map( (project, i) => {
                 return <Gallery key={i} name={project.name} images={project.images} />
                 })
             }
+            </>
             <div className="border-t border-black">
                 <Footer/>
             </div>
@@ -48,6 +60,8 @@ const projects: Project[] = [
       images: [Picture1, Picture3, Picture2],
     },
 ]
+
+
 
 function Gallery({ name, images }: { name: string, images: StaticImageData[] }) {
     const container = useRef(null);    
@@ -78,7 +92,7 @@ function Gallery({ name, images }: { name: string, images: StaticImageData[] }) 
                     <Image className="z-50" src={image} alt={`image-${index + 1}`} />
                 </motion.div>
             ))}
-        </div>
+        </div> 
         </div>
     );
 }
