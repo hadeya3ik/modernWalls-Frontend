@@ -78,9 +78,14 @@ function Gallery({ name, images }: { name: string, images: StaticImageData[] }) 
     return (
         <div ref={container} className="gallery clip-path-polygon-0-0-0-100-100-100-100-0">
             <motion.div className="z-[0] whitespace-nowrap vignette fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] overflow-hidden">
-                <h1 className="text-xl sm:text-3xl md:text-5xl font-ppNeueMontreal text-center text-black mix-blend-difference">
-                    {name}
-                </h1>
+            <motion.h1
+    className="text-xl sm:text-3xl md:text-5xl font-ppNeueMontreal text-center mix-blend-difference"
+    initial={{ color: "#ffffff" }} // Set initial color to white
+    animate={{ color: "#000000" }} // Animate to black
+    transition={{ duration: 1 }} // Set duration for the color transition
+>
+    {name}
+</motion.h1>
             </motion.div>
             <div className="flex flex-wrap justify-center sm:justify-between px-4"> 
             {images.map((image, index) => (
