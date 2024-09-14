@@ -78,10 +78,10 @@ export default function Services() {
                     Our services
                 </h1>
                 <p className='max-w-lg'>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Non lectus eget non mus facilisis ipsum nunc faucibus. Tempus fusce placerat accumsan nec primis orci egestas facilisis. Enim neque ullamcorper maximus magna non. Sapien leo felis risus; nisi ullamcorper iaculis. Adipiscing fusce tristique magna morbi montes blandit vehicula. Porttitor tortor praesent vehicula commodo platea.
+                At Modern Walls, we offer a wide range of interior design services tailored to bring your vision to life. Whether you're renovating your home or designing a new space, we provide creative and functional solutions. Our expertise covers everything from lighting to ceiling modeling, with an eye for detail and quality craftsmanship. We specialize in decorative elements such as sculptures, framing, chandeliers, and mirrors, ensuring each piece enhances the overall look and feel of your space.
                 </p>
                 <p className='sm:max-w-md max-w-lg self-end'>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Our attention to detail ensures that every aspect of your project reflects your style. Whatever your design needs, Modern Walls is here to transform your space into something truly special.
                 </p>
             </div>
             <div className="hidden md:block h-[500px] w-[335px] overflow-hidden"></div>

@@ -91,7 +91,7 @@ function Gallery({ name, images }: { name: string, images: StaticImageData[] }) 
         <div ref={container} className="gallery clip-path-polygon-0-0-0-100-100-100-100-0 pb-8">
             <motion.div className="z-[0] whitespace-nowrap vignette fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] overflow-hidden">
             <motion.h1
-                className="text-xl sm:text-3xl md:text-5xl font-ppNeueMontreal text-center mix-blend-difference"
+                className="text-xl sm:text-3xl md:text-3xl font-ppNeueMontreal text-center mix-blend-difference"
                 initial={{ color: "#ffffff" }} 
                 animate={{ color: "#000000" }} 
                 transition={{ duration: 1 }} 
@@ -104,7 +104,7 @@ function Gallery({ name, images }: { name: string, images: StaticImageData[] }) 
                 <motion.div
                     key={index}
                     style={{ y: index === 0 ? y1 : index === 1 ? y2 : y3 }}
-                    className=" h-[40vh] w-[50vh] relative z-[50]  " 
+                    className=" h-[40vh] w-[40vh]  z-[50]  " 
                 >
                     <Image className="z-50" src={image} alt={`image-${index + 1}`} />
                 </motion.div>
