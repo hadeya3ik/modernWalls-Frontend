@@ -78,7 +78,7 @@ export default function Services() {
                     Our services
                 </h1>
                 <p className='max-w-lg'>
-                At Modern Walls, we offer a wide range of interior design services tailored to bring your vision to life. Whether you're renovating your home or designing a new space, we provide creative and functional solutions. Our expertise covers everything from lighting to ceiling modeling, with an eye for detail and quality craftsmanship. We specialize in decorative elements such as sculptures, framing, chandeliers, and mirrors, ensuring each piece enhances the overall look and feel of your space.
+                At Modern Walls, we offer a wide range of interior design services tailored to bring your vision to life. Whether youre renovating your home or designing a new space, we provide creative and functional solutions. Our expertise covers everything from lighting to ceiling modeling, with an eye for detail and quality craftsmanship. We specialize in decorative elements such as sculptures, framing, chandeliers, and mirrors, ensuring each piece enhances the overall look and feel of your space.
                 </p>
                 <p className='sm:max-w-md max-w-lg self-end'>
                 Our attention to detail ensures that every aspect of your project reflects your style. Whatever your design needs, Modern Walls is here to transform your space into something truly special.
