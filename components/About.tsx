@@ -1,7 +1,7 @@
 import React from 'react'
 import ParallaxBg from './ParallaxBg'
-import pic1 from '@/images/pexels11.jpg'
-import pic2 from '@/images/pexels12.jpg'
+import pic1 from '@/images/parlorSeating.jpg'
+import pic2 from '@/images/Parlor.jpg'
 import Image from 'next/image'
 
 function About() {

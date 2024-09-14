@@ -2,11 +2,11 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import pic1 from '@/images/pexels1.jpg';
-import pic2 from '@/images/pexels2.jpg';
-import pic3 from '@/images/pexels3.jpg';
-import pic4 from '@/images/pexels6.jpg';
-import pic5 from '@/images/pexels10.jpg';
+import pic1 from '@/images/slideShowKitchen.png';
+import pic2 from '@/images/slideShowOffice.png';
+import pic3 from '@/images/slideShowMedia.png';
+import pic4 from '@/images/slideShowBathroom.png';
+import pic5 from '@/images/chocalateThemeLiving.jpg';
 import { StaticImageData } from 'next/image';
 
 interface Project {

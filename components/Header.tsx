@@ -30,7 +30,7 @@ export default function Header() {
   const [selectedLink, setSelectedLink] = useState({ isActive: false, index: 0 });
 
   return (
-    <div className="md:p-12 sm:p-8 p-4 absolute top-0 right-0 z-[40] ">
+    <div className="md:py-12 sm:p-8 p-4 absolute top-0 right-0 z-[40] ">
       <div className="flex">
         <div
           onClick={() => setIsActive(!isActive)}

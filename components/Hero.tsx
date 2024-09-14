@@ -1,6 +1,6 @@
 'use client'
 import React, { useRef } from 'react';
-import Picture7 from '@/images/pexels8.jpg';
+import Picture7 from '@/images/WoodLivingWall.jpg';
 import Image from 'next/image';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import Navigation from './Navigation';

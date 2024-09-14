@@ -1,7 +1,7 @@
 'use client'
 import React, { useRef } from 'react';
 import Image from 'next/image';
-import Background from '@/images/pexels13.jpg';
+import Background from '@/images/marbleShelves.jpg';
 import { useScroll, useTransform, motion } from 'framer-motion';
 
 export default function ParallaxBg() {

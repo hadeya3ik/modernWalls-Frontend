@@ -28,7 +28,7 @@ const NavBar = () => {
 
   return (
     <motion.nav
-      className='md:p-12 sm:p-8 p-4 sticky top-0 flex justify-between z-50 text-gray-700 '
+      className='md:py-12 sm:p-8 p-4 sticky px-4 top-0 flex justify-between z-50 text-gray-700 '
       >
         <motion.h1 
         variants={{
@@ -42,7 +42,7 @@ const NavBar = () => {
         initial="initial"
         animate={hiddenNav ? 'hidden' : 'visible'}
         transition={{ duration: 0.8, ease: 'easeInOut' }} 
-        className='sm:text-3xl text-2xl mix-blend-difference text-black'>
+        className='text-2xl mix-blend-difference text-black'>
         MODERN WALLS</motion.h1>
         <Header/>
     </motion.nav>
